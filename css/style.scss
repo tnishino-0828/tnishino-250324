@@ -216,6 +216,17 @@ a {
   }
 }
 
+.navbar-toggle {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background: url(../img/ico_menu.png) (center / contain) no-repeat;
+  cursor: pointer;
+}
+
 .headermess {
   display: none;
 }
@@ -2708,7 +2719,7 @@ div.about {
         }
         div.image {
           @media (min-width: 768px) {
-            width: 40%;
+            width: 50%;
           }
           @media (min-width: 768px) and (max-width: 991.98px) {
             width: 45%;
@@ -3339,3 +3350,89 @@ div.about {
     }
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .navbar-toggle {
+    right: 50px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .pushbarmain .btnclose {
+    right: 50px;
+    top: 40px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .drawermenu {
+    border-radius: 0 0 70px 70px;
+  }
+
+  .drawermenucon {
+    .pic {
+      display: block;
+      width: min(34.72222%, 500px);
+      @media (min-width: 768px) and (max-width: 1342px) {
+
+      } 
+    }
+
+    .des {
+      flex: 1;
+      padding: 130px min(5.85938vw, 120px) 50px;
+    }
+
+    .companyname {
+      font-size: 17px;
+      line-height: 2;
+
+      .str {
+        margin-left: 15px;
+        font-size: 2em;
+      }
+    }
+  }
+
+  .asidenav {
+    margin-top: 50px;
+    flex-direction: row;
+    column-gap: 20px;
+
+    .navlist li > a {
+      padding: 4px 0;
+      font-size: 22px;
+    }
+  }
+
+  .asidecta {
+    margin-top: 50px;
+
+    .crow {
+      flex-direction: row;
+      margin-top: 40px;
+
+      .col01 {
+        width: 125px;
+      }
+
+      .col02 {
+        width: 256px;
+      }
+    }
+
+    .tel {
+      font-size: 14px;
+
+      .num {
+        font-size: 24px;
+      }
+    }
+
+    .addr {
+      font-size: 16px;
+    }
+  }
+}
+

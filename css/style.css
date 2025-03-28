@@ -208,6 +208,17 @@ a {
   line-height: 1;
 }
 
+.navbar-toggle {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background: url(../img/ico_menu.png) center/contain no-repeat;
+  cursor: pointer;
+}
+
 .headermess {
   display: none;
 }
@@ -2404,7 +2415,7 @@ div.about section.strengths div.lists div.item {
 }
 @media (min-width: 768px) {
   div.about section.strengths div.lists div.item div.image {
-    width: 40%;
+    width: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -3196,5 +3207,70 @@ div.about section.access div.data + .data {
 @media (min-width: 768px) and (max-width: 991.98px) {
   div.about section.access div.data + .data {
     margin-top: 102px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .navbar-toggle {
+    right: 50px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+  }
+  .pushbarmain .btnclose {
+    right: 50px;
+    top: 40px;
+    width: 70px;
+    height: 70px;
+  }
+  .drawermenu {
+    border-radius: 0 0 70px 70px;
+  }
+  .drawermenucon .pic {
+    display: block;
+    width: min(34.72222%, 500px);
+  }
+  .drawermenucon .des {
+    flex: 1;
+    padding: 130px min(5.85938vw, 120px) 50px;
+  }
+  .drawermenucon .companyname {
+    font-size: 17px;
+    line-height: 2;
+  }
+  .drawermenucon .companyname .str {
+    margin-left: 15px;
+    font-size: 2em;
+  }
+  .asidenav {
+    margin-top: 50px;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .asidenav .navlist li > a {
+    padding: 4px 0;
+    font-size: 22px;
+  }
+  .asidecta {
+    margin-top: 50px;
+  }
+  .asidecta .crow {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  .asidecta .crow .col01 {
+    width: 125px;
+  }
+  .asidecta .crow .col02 {
+    width: 256px;
+  }
+  .asidecta .tel {
+    font-size: 14px;
+  }
+  .asidecta .tel .num {
+    font-size: 24px;
+  }
+  .asidecta .addr {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
