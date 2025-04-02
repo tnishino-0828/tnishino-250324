@@ -2430,11 +2430,17 @@ div.about section.strengths div.lists div.item div.image img.img {
 @media (min-width: 768px) {
   div.about section.strengths div.lists div.item div.image img.img {
     border-radius: 65px;
+    border-radius: 86px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   div.about section.strengths div.lists div.item div.image img.img {
     border-radius: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  div.about section.strengths div.lists div.item div.image img.img {
+    border-radius: 45px;
   }
 }
 div.about section.strengths div.lists div.item div.text {
